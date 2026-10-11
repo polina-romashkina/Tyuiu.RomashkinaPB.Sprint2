@@ -57,7 +57,7 @@ namespace Tyuiu.RomashkinaPB.Sprint2.Task5.V13.Lib
                     g++;
                 }
             }
-            return $"{g:D4}-{m:D2}-{n:D2}";
+            return $"{g:D4}.{m:D2}.{n:D2}";
         }
     }
 }
