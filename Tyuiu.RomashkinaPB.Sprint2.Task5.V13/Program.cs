@@ -41,14 +41,14 @@ namespace Tyuiu.RomashkinaPB.Sprint2.Task5.V13
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите год:");
-            int g = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите число:");
+            int n = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Введите номер месяца:");
             int m = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введите число:");
-            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите год:");
+            int g = Convert.ToInt32(Console.ReadLine());
 
             string res = ds.FindDateOfNextDay(g, m, n);
             if ((n < 1) || (n > 31) || (m < 1) || (m > 12))
