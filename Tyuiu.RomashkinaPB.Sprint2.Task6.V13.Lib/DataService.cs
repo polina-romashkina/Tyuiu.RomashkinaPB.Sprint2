@@ -16,9 +16,9 @@ namespace Tyuiu.RomashkinaPB.Sprint2.Task6.V13.Lib
 
             return n switch
             {
-                _ when n < daysInMonth => $"{n + 1}.{m}.{g}",
-                _ when m < 12 => $"01.{m + 1}.{g}",
-                _ => $"01.01.{g + 1}"
+                _ when n < daysInMonth => new DateTime(g,m,n+1).ToString("dd.MM.yyyy"),
+                _ when m < 12 => new DateTime(g, m + 1, 1).ToString("dd.MM.yyyy"),
+                _ => new DateTime(g + 1, 1, 1).ToString("dd.MM.yyyy"),
             };
         }
     }

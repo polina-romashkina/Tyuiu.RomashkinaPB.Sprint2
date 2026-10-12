@@ -13,7 +13,7 @@ namespace Tyuiu.RomashkinaPB.Sprint2.Task6.V13.Test
                 int m = 1;
                 int n = 15;
                 string res = ds.FindDateOfNextDay(g, m, n);
-                string wait = "16.1.2024";
+                string wait = "16.01.2024";
                 Assert.AreEqual(wait, res);
 
 
@@ -27,7 +27,7 @@ namespace Tyuiu.RomashkinaPB.Sprint2.Task6.V13.Test
                 int m = 1;
                 int n = 31;
                 string res = ds.FindDateOfNextDay(g, m, n);
-                string wait = "01.2.2024";
+                string wait = "01.02.2024";
                 Assert.AreEqual(wait, res);
 
 
